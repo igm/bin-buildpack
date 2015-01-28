@@ -5,8 +5,9 @@ location=$1
 
 # echo >&2 "build location: $location"
 
-manifest="default_process_type:
-  web: echo >\%2 \"\$(ls)\"
+manifest="config_vars:
+default_process_type:
+  web: \$HOME/agent
 "
 
 # echo >&2 "$manifest"
