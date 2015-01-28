@@ -2,7 +2,7 @@
 
 # set -eo pipefail
 
-var=$(pwd)
+var=$(env)
 echo >&2 "The current working directory $var."
 
 ls=$(ls)
