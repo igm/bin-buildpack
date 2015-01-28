@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 # bin/release <build-dir>
 
-echo -e "---\ndefault_process_type:\n  web: ./agent"
+cat <<EOF
+---
+default_process_types:
+  web: ./agent
+EOF
 

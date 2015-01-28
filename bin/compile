@@ -16,6 +16,7 @@ cache=$(cd "$2/" && pwd)
 
 echo >&2 "build dir: $build"
 
+chmod 755 %buildpack/agent
 
 cp $buildpack/agent $build
 echo >&2 "Compilation done."
