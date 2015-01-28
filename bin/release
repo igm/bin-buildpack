@@ -3,12 +3,12 @@
 
 location=$1
 
-echo >&2 "build location: $location"
+# echo >&2 "build location: $location"
 
 manifest="default_process_type:
   web: \$HOME/agent
 "
 
-echo >&2 "$manifest"
+# echo >&2 "$manifest"
 
 echo "$manifest"
