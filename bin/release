@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 # bin/release <build-dir>
 
-echo "web: /home/vcap/app/agent"
+manifest="default_process_type:
+  web: /home/vcap/app/agent
+"
+
+echo "$manifest"
