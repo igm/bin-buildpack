@@ -6,7 +6,7 @@ location=$1
 echo >&2 "build location: $location"
 
 manifest="default_process_type:
-  web: $location/agent
+  web: agent
 "
 
 echo "$manifest"
