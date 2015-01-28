@@ -7,7 +7,7 @@ location=$1
 
 manifest="config_vars:
 default_process_type:
-  web: \$HOME/agent
+  web: /home/vcap/app/agent
 "
 
 # echo >&2 "$manifest"
