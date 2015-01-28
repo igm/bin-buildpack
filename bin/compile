@@ -2,6 +2,8 @@
 
 set -eo pipefail
 
+pwd
+
 mkdir -p "$1" "$2"
 build=$(cd "$1/" && pwd)
 cache=$(cd "$2/" && pwd)
