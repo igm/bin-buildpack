@@ -2,8 +2,8 @@
 
 # set -eo pipefail
 
-var=$(env)
-echo >&2 "The current working directory $var."
+buildpack=$(dirname $(dirname $0))
+echo >&2 "The current buildpack directory $buildpack."
 
 ls=$(ls)
 echo >&2 "$ls."
@@ -15,5 +15,5 @@ build=$(cd "$1/" && pwd)
 cache=$(cd "$2/" && pwd)
 
 
-cp /tmp/buildpacks/bin-buildpack/agent $build
+cp $buildpack/agent $build/agent
 echo >&2 "Compilation done."
