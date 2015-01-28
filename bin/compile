@@ -14,6 +14,8 @@ mkdir -p "$1" "$2"
 build=$(cd "$1/" && pwd)
 cache=$(cd "$2/" && pwd)
 
+echo >&2 "build dir: $build"
 
-cp $buildpack/agent $build/agent
+
+cp $buildpack/agent $build
 echo >&2 "Compilation done."

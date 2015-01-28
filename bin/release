@@ -1,15 +1,5 @@
 #!/usr/bin/env bash
 # bin/release <build-dir>
 
-location=$1
+echo -e "---\ndefault_process_type:\n  web: ./agent"
 
-# echo >&2 "build location: $location"
-
-manifest="---
-default_process_type:
-  web: /home/vcap/app/agent
-"
-
-# echo >&2 "$manifest"
-
-echo "$manifest"
