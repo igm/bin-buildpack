@@ -2,10 +2,13 @@
 
 set -eo pipefail
 
-pwd
+echo >&2 "Compiling... "
 
 mkdir -p "$1" "$2"
 build=$(cd "$1/" && pwd)
 cache=$(cd "$2/" && pwd)
 
-cp ../agent $build
+echo >&2 "Compilation done."
+
+
+# cp ../agent $build
