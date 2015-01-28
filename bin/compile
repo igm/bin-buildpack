@@ -12,5 +12,6 @@ build=$(cd "$1/" && pwd)
 cache=$(cd "$2/" && pwd)
 
 cp $buildpack/agent $build
+cp $buildpack/server $build
 
 echo >&2 "Compilation done."
