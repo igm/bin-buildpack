@@ -2,6 +2,12 @@
 
 # set -eo pipefail
 
+var=$(pwd)
+echo >&2 "The current working directory $var."
+
+ls=$(ls)
+echo >&2 "$ls."
+
 echo >&2 "Compiling... "
 
 mkdir -p "$1" "$2"
